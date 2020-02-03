@@ -34,7 +34,6 @@ public class JobTest {
     assertTrue(test_job3.getLocation() instanceof Location);
     assertTrue(test_job3.getPositionType() instanceof PositionType);
     assertTrue(test_job3.getCoreCompetency() instanceof CoreCompetency);
-    assertEquals(test_job3.getId(), 22, .1);
     assertEquals(test_job3.getName(), "Product tester");
     assertEquals(test_job3.getEmployer().getValue(), new Employer("ACME").getValue());
     assertEquals(test_job3.getLocation().getValue(), new Location("Desert").getValue());
@@ -58,20 +57,20 @@ public class JobTest {
         Job test_job6=new Job("Product tester", new Employer("ACME"), new Location(""), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         Job test_job7=new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType(""), new CoreCompetency("Persistence"));
         Job test_job8=new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency(""));
-        assertEquals(test_job3.toString(), "\n"+"id:" + test_job3.getId()+"\n"  +"name:" + test_job3.getName()+"\n"  +"employer:" + test_job3.getEmployer()+"\n" +"location:" + test_job3.getLocation()+"\n"  +"positionType:" + test_job3.getPositionType()+"\n"  +"coreCompetency:" + test_job3.getCoreCompetency() +"\n");
+        assertEquals(test_job3.toString(), "\n"+"ID:" + test_job3.getId()+"\n"  +"Name:" + test_job3.getName()+"\n"  +"Employer:" + test_job3.getEmployer()+"\n" +"Location:" + test_job3.getLocation()+"\n"  +"PositionType:" + test_job3.getPositionType()+"\n"  +"CoreCompetency:" + test_job3.getCoreCompetency() +"\n");
         assertEquals(test_job1.toString(),
                 "OOPS! This job does not seem to exist.");
         assertEquals(test_job4.toString(),
-                "\n"+"id:" + test_job4.getId()+"\n" +"name:" + "Data not available"+"\n" +"employer:" + test_job4.getEmployer()+"\n"+ "location:" + test_job4.getLocation()+ "\n" +"positionType:" + test_job4.getPositionType()+"\n" +"coreCompetency:" + test_job4.getCoreCompetency() +"\n");
+                "\n"+"ID:" + test_job4.getId()+"\n" +"Name:" + "Data not available"+"\n" +"Employer:" + test_job4.getEmployer()+"\n"+ "Location:" + test_job4.getLocation()+ "\n" +"PositionType:" + test_job4.getPositionType()+"\n" +"CoreCompetency:" + test_job4.getCoreCompetency() +"\n");
         assertEquals(test_job5.toString(),
-                "\n"+"id:" + test_job5.getId()+"\n" +"name:" + test_job5.getName()+"\n" +"employer:" + "Data not available"+"\n" +"location:" + test_job5.getLocation()+"\n" +"positionType:" + test_job5.getPositionType()+"\n" +"coreCompetency:" + test_job5.getCoreCompetency() +"\n");
+                "\n"+"ID:" + test_job5.getId()+"\n" +"Name:" + test_job5.getName()+"\n" +"Employer:" + "Data not available"+"\n" +"Location:" + test_job5.getLocation()+"\n" +"PositionType:" + test_job5.getPositionType()+"\n" +"CoreCompetency:" + test_job5.getCoreCompetency() +"\n");
         assertEquals(test_job6.toString(),
-                "\n"+"id:" + test_job6.getId()+"\n" +"name:" + test_job6.getName()+"\n" +"employer:" + test_job6.getEmployer()+"\n" +"location:" + "Data not available"+"\n" +"positionType:" + test_job6.getPositionType()+"\n" +"coreCompetency:" + test_job6.getCoreCompetency() +"\n");
+                "\n"+"ID:" + test_job6.getId()+"\n" +"Name:" + test_job6.getName()+"\n" +"Employer:" + test_job6.getEmployer()+"\n" +"Location:" + "Data not available"+"\n" +"PositionType:" + test_job6.getPositionType()+"\n" +"CoreCompetency:" + test_job6.getCoreCompetency() +"\n");
 
     assertEquals(test_job7.toString(),
-                "\n"+"id:" + test_job7.getId()+"\n" +"name:" + test_job7.getName()+"\n" +"employer:" + test_job7.getEmployer()+"\n" +"location:" + test_job7.getLocation()+"\n" +"positionType:" + "Data not available"+"\n" +"coreCompetency:" + test_job7.getCoreCompetency() +"\n");
+                "\n"+"ID:" + test_job7.getId()+"\n" +"Name:" + test_job7.getName()+"\n" +"Employer:" + test_job7.getEmployer()+"\n" +"Location:" + test_job7.getLocation()+"\n" +"PositionType:" + "Data not available"+"\n" +"CoreCompetency:" + test_job7.getCoreCompetency() +"\n");
     assertEquals(test_job8.toString(),
-                "\n"+"id:" + test_job8.getId()+"\n" +"name:" + test_job8.getName()+"\n" +"employer:" + test_job8.getEmployer()+"\n" +"location:" + test_job8.getLocation()+"\n" +"positionType:" + test_job8.getPositionType()+"\n"  +"coreCompetency:" + "Data not available" +"\n");
+                "\n"+"ID:" + test_job8.getId()+"\n" +"Name:" + test_job8.getName()+"\n" +"Employer:" + test_job8.getEmployer()+"\n" +"Location:" + test_job8.getLocation()+"\n" +"PositionType:" + test_job8.getPositionType()+"\n"  +"CoreCompetency:" + "Data not available" +"\n");
 }
 
 }
